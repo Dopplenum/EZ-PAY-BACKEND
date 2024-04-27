@@ -1,4 +1,4 @@
-##EZ PAY BACKEND
+#EZ PAY BACKEND
 This is the backend application for a payment system. It provides APIs for user authentication, account management, and fund transfers.
 
 Features
