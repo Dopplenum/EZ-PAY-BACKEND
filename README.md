@@ -37,20 +37,27 @@ Replace <mongodb-uri> and <jwt-secret> with your MongoDB connection string and J
 Start the server:
 npm start
 
-API Endpoints
-Authentication
-POST /api/v1/user/signup: Create a new user account.
-Request body: { "username": "", "password": "", "firstname": "", "lastname": "" }
-Response: { "message": "User created successfully", "token": "" }
-POST /api/v1/user/signin: Sign in to an existing user account.
-Request body: { "username": "", "password": "" }
-Response: { "token": "" }
-Account Management
-GET /api/v1/account/balance: Get the account balance.
-Requires authentication (JWT token in header).
-Funds Transfer
-POST /api/v1/account/transfer: Transfer funds to another account.
-Request body: { "amount": , "to": "" }
-Requires authentication (JWT token in header).
+## API Endpoints
+
+### Authentication
+
+- **POST /api/v1/user/signup**: Create a new user account.
+  - **Request body**: `{ "username": "", "password": "", "firstname": "", "lastname": "" }`
+  - **Response**: `{ "message": "User created successfully", "token": "" }`
+
+- **POST /api/v1/user/signin**: Sign in to an existing user account.
+  - **Request body**: `{ "username": "", "password": "" }`
+  - **Response**: `{ "token": "" }`
+
+### Account Management
+
+- **GET /api/v1/account/balance**: Get the account balance.
+  - **Requires authentication** (JWT token in header).
+
+### Funds Transfer
+
+- **POST /api/v1/account/transfer**: Transfer funds to another account.
+  - **Request body**: `{ "amount": , "to": "" }`
+  - **Requires authentication** (JWT token in header).
 
 
