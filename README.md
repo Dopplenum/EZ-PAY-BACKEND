@@ -1,6 +1,7 @@
 # EZ PAY BACKEND
 
 This is the backend application for a payment system. It provides APIs for user authentication, account management, and fund transfers.
+Full backend features with authentication and follows ACID properties.
 
 ## Features
 
